@@ -2,7 +2,7 @@
 
 ## Exploring Multi-Task Learning with Fine-Tuned Small Language Models via LoRA for Natural Language Understanding Tasks
 
-This repository contains the official implementation, experimental results, and supplementary materials for the paper:
+This repository contains the official implementation, experimental notebooks, datasets, and experimental results accompanying the paper:
 
 > **Exploring Multi-Task Learning with Fine-Tuned Small Language Models via LoRA for Natural Language Understanding Tasks**
 
@@ -16,55 +16,71 @@ This research is conducted within the framework of science and technology projec
 
 ## Abstract
 
-Natural Language Understanding (NLU) tasks are commonly addressed using large pre-trained language models. However, full fine-tuning requires substantial computational resources and storage. This project investigates an efficient Multi-Task Learning (MTL) framework based on Small Language Models (SLMs) combined with Low-Rank Adaptation (LoRA). The proposed approach enables parameter-efficient adaptation while preserving competitive performance across multiple NLU benchmark tasks.
+Natural Language Understanding (NLU) tasks have achieved remarkable performance with pre-trained language models. However, full fine-tuning often requires substantial computational resources and memory. This work investigates an efficient Multi-Task Learning (MTL) framework based on Small Language Models (SLMs) combined with Low-Rank Adaptation (LoRA). The proposed approach significantly reduces the number of trainable parameters while maintaining competitive performance on multiple benchmark datasets.
 
 ---
 
-## Repository Structure
+## Repository Contents
 
-```text
-Light-MTL/
-│
-├── notebooks/              # Jupyter notebooks
-├── results/                # Experimental results
-├── figures/                # Figures used in the paper
-├── data/                   # Dataset (if publicly distributable)
-├── models/                 # Saved checkpoints
-├── requirements.txt
-├── README.md
-└── LICENSE
-```
+This repository currently includes:
+
+- Jupyter notebooks for model training and evaluation
+- Experimental result files (.csv)
+- Source code for baseline and proposed methods
+- Figures used in the paper
+- README and supplementary materials
 
 ---
 
-## Experimental Tasks
+## Benchmark Tasks
 
-The proposed framework is evaluated on several Natural Language Understanding benchmarks including:
+The experiments are conducted on the following Natural Language Understanding tasks:
 
 - SST-2 (Sentiment Classification)
-- QQP (Question Pair Classification)
+- QQP (Quora Question Pairs)
 - STS-B (Semantic Textual Similarity)
 
-Baseline methods include:
+The repository also contains comparison results for:
 
 - SVM
 - BiLSTM
-- STL-MiniLM
-- STL-DistilBERT
-- STL-ALBERT
-- Full Multi-Task Fine-Tuning
-- Proposed Light-MTL (LoRA)
+- MiniLM
+- DistilBERT
+- ALBERT
+- Single-task Learning (STL)
+- Multi-task Learning (MTL)
+- LoRA-based Parameter-Efficient Fine-Tuning (Light-MTL)
 
 ---
 
-## Installation
+## Repository
 
-Clone the repository
+The repository contains experimental notebooks and result files used in the paper.
 
-```bash
-git clone https://github.com/T2026-923-07/Light-MTL.git
-cd Light-MTL
-```
+Typical files include:
+
+- `.ipynb` notebooks
+- `.csv` experimental results
+- Figures
+- README
+
+---
+
+## Requirements
+
+Python 3.10+
+
+Main libraries include:
+
+- PyTorch
+- Transformers
+- Hugging Face
+- PEFT (LoRA)
+- Datasets
+- Scikit-learn
+- Pandas
+- NumPy
+- Matplotlib
 
 Install dependencies
 
@@ -74,32 +90,14 @@ pip install -r requirements.txt
 
 ---
 
-## Usage
-
-Run the experiments using the corresponding notebooks or Python scripts.
-
-Example:
-
-```bash
-python train.py
-```
-
-or
-
-```bash
-jupyter notebook
-```
-
----
-
 ## Experimental Results
 
-The repository contains:
+The repository provides:
 
-- Experimental notebooks
-- Evaluation results
-- CSV result files
-- Figures used in the paper
+- Training notebooks
+- Evaluation notebooks
+- Experimental CSV files
+- Figures used in the manuscript
 
 ---
 
@@ -119,7 +117,17 @@ If you find this repository useful, please cite:
 
 ## Acknowledgement
 
-This work was supported by the institutional science and technology project at Quy Nhon University under project code **T2026.923.07**.
+This work was supported by the institutional science and technology project at **Quy Nhon University**, Vietnam under the project code **T2026.923.07**.
+
+---
+
+## Contact
+
+**Nguyen Phuong Thao**
+
+Quy Nhon University
+
+Email: *your-email@domain.com*
 
 ---
 
