@@ -60,7 +60,6 @@ The repository contains experimental notebooks and result files used in the pape
 Typical files include:
 
 - `.ipynb` notebooks
-- `.csv` experimental results
 - Figures
 - README
 
