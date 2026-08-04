@@ -3,18 +3,19 @@
 ## Exploring Multi-Task Learning with Fine-Tuned Small Language Models via LoRA for Natural Language Understanding Tasks
 
 ## Citation
-
-If you use this repository or our paper in your research, please cite:
-
 ```bibtex
 @article{nguyen2026lightmtl,
-  title={Exploring Multi-Task Learning with Fine-Tuned Small Language Models via LoRA for Natural Language Understanding Tasks},
-  author={Nguyen, Phuong Thao and Le, Quang-Hung},
-  year={2026}
+  title = {
+    Exploring Multi-Task Learning with Fine-Tuned Small Language Models
+    via LoRA for Natural Language Understanding Tasks
+  },
+  author = {
+    Nguyen, Phuong Thao
+    and Le, Quang-Hung
+  },
+  year = {2026}
 }
 ```
-
----
 
 This repository contains the official implementation, experimental notebooks, datasets, and experimental results accompanying the paper:
 
